@@ -513,7 +513,8 @@
         <graphicClass>Graphic_Single</graphicClass>
       </graphicData>
     </value>
-	</li>	  
+	</li>	
+	
 
     <li Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="VWE_FlashGrenade"]/graphicData</xpath>

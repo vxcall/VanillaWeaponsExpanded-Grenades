@@ -113,6 +113,7 @@
       </layers>
       <tags>
         <li>GrenadeDestructiveBelt</li>
+		<li>GrenadeFragBelt</li>
       </tags>
     </apparel>
   </ThingDef>

@@ -21,7 +21,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>12</maxCharges>
         <ammoDef>Weapon_GrenadeSmoke</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
@@ -140,7 +140,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>12</maxCharges>
         <ammoDef>Weapon_GrenadeFlashbang</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
@@ -270,7 +270,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>12</maxCharges>
         <ammoDef>VWE_SmokeGrenade</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
@@ -388,7 +388,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>12</maxCharges>
         <ammoDef>VWE_FlashGrenade</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>

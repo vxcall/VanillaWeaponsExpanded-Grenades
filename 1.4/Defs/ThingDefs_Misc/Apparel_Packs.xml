@@ -7,7 +7,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>8</maxCharges>
         <ammoDef>Weapon_GrenadeFrag</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>
@@ -125,7 +125,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>8</maxCharges>
         <ammoDef>Weapon_GrenadeMolotov</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>
@@ -242,7 +242,7 @@
     <techLevel>Industrial</techLevel>
     <comps>
       <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+        <maxCharges>10</maxCharges>
         <ammoDef>Weapon_GrenadeEMP</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>

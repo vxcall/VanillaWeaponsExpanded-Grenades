@@ -3,7 +3,7 @@
   
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Vanilla Factions Expanded - Settlers</li>
+      <li>Biotech</li>
     </mods>
 
     <match Class="PatchOperationFindMod">
@@ -15,32 +15,31 @@
 	  <value>
 	
   <ThingDef ParentName="ApparelNoQualityBase">
-    <defName>VWE_Apparel_DynamiteBelt</defName>
-    <label>dynamite belt</label>
-    <description>Makeshift explosive sticks of chemfuel strapped to a belt. They can be thrown a short distance, where they will explode after a random amount of time. Can be reloaded using dynamite.</description>
-    <techLevel>Industrial</techLevel>
+    <defName>VWE_Apparel_GrenadeToxicBelt</defName>
+    <label>tox grenade belt</label>
+    <description>Charge powered lethal gas canister causing toxic buildup over a very short period of time, strapped to a belt. Can be reloaded using tox grenades.</description>
+    <techLevel>Spacer</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
+      <li Class="CompProperties_ApparelReloadable">
         <maxCharges>6</maxCharges>
-        <ammoDef>VFES_Weapon_GrenadeDynamite</ammoDef>
+        <ammoDef>Weapon_GrenadeTox</ammoDef>
         <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
         <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
-        <chargeNoun>dynamite</chargeNoun>
+        <chargeNoun>gas</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
       </li>
     </comps>
 	<verbs>
 		<li Class="CombatExtended.VerbPropertiesCE">
-			<label>throw dynamite</label>
+			<label>throw tox grenade</label>
 			<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
 			<hasStandardCommand>true</hasStandardCommand>
 			<onlyManualCast>True</onlyManualCast>
 			<warmupTime>1.8</warmupTime>
 			<range>12</range>
-			<minRange>3</minRange>
-			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
 			<soundCast>ThrowGrenade</soundCast>
 			<soundCastTail>GunTail_Medium</soundCastTail>
 			<muzzleFlashScale>14</muzzleFlashScale>
@@ -49,29 +48,30 @@
 				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
 			<ignorePartialLoSBlocker>true</ignorePartialLoSBlocker>
-			<defaultProjectile>VFES_Proj_Dynamite</defaultProjectile>
+			<defaultProjectile>Proj_GrenadeTox</defaultProjectile>
 			<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
 		</li>
 	</verbs>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
+	<researchPrerequisite>ToxGas</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+				<li>FabricationBench</li>
+		</recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
     </recipeMaker>
     <costList>
-      <VFES_Weapon_GrenadeDynamite>6</VFES_Weapon_GrenadeDynamite>
+      <Weapon_GrenadeTox>1</Weapon_GrenadeTox>
     </costList>
     <graphicData>
-      <texPath>Things/Item/BeltGrenades/DynamiteBelt</texPath>
+      <texPath>Things/Item/BeltGrenades/GasGrenadeBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -86,7 +86,7 @@
     </thingCategories>
     <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DynamiteBelt/DynamiteBelt</wornGraphicPath>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GasGrenadeBelt/GasGrenadeBelt</wornGraphicPath>
       <wornGraphicData>
         <renderUtilityAsPack>true</renderUtilityAsPack>
         <north>
@@ -128,7 +128,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>GrenadeDestructiveBelt</li>
+        <li>GrenadeNonDestructiveBelt</li>
       </tags>
     </apparel>
   </ThingDef>
@@ -141,26 +141,26 @@
 
       <value>
 	  
-  <ThingDef ParentName="ApparelNoQualityBase">
-    <defName>VWE_Apparel_DynamiteBelt</defName>
-    <label>dynamite belt</label>
-    <description>Makeshift explosive sticks of chemfuel strapped to a belt. They can be thrown a short distance, where they will explode after a random amount of time. Can be reloaded using dynamite.</description>
-    <techLevel>Industrial</techLevel>
+ <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>VWE_Apparel_GrenadeToxicBelt</defName>
+    <label>tox grenade belt</label>
+    <description>Charge powered lethal gas canister causing toxic buildup over a very short period of time, strapped to a belt. Can be reloaded using tox grenades.</description>
+    <techLevel>Spacer</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
+      <li Class="CompProperties_ApparelReloadable">
         <maxCharges>6</maxCharges>
-        <ammoDef>VFES_Weapon_GrenadeDynamite</ammoDef>
-        <ammoCountToRefill>1</ammoCountToRefill>
+        <ammoDef>Weapon_GrenadeTox</ammoDef>
+        <ammoCountPerCharge>1</ammoCountPerCharge>
         <baseReloadTicks>60</baseReloadTicks>
         <soundReload>Standard_Reload</soundReload>
         <hotKey>Misc4</hotKey>
-        <chargeNoun>dynamite</chargeNoun>
+        <chargeNoun>gas</chargeNoun>
         <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
       </li>
     </comps>
     <verbs>
       <li>
-        <label>throw dynamite</label>
+        <label>throw tox grenade</label>
         <verbClass>Verb_LaunchProjectileStatic</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <onlyManualCast>True</onlyManualCast>
@@ -168,35 +168,36 @@
         <forcedMissRadius>1.9</forcedMissRadius>
         <warmupTime>1.5</warmupTime>
         <noiseRadius>4</noiseRadius>
-        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
         <soundCast>ThrowGrenade</soundCast>
         <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
         <targetParams>
           <canTargetLocations>true</canTargetLocations>
         </targetParams>
-        <defaultProjectile>VFES_Proj_Dynamite</defaultProjectile>
+        <defaultProjectile>Proj_GrenadeTox</defaultProjectile>
         <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
       </li>
     </verbs>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedPack</unfinishedThingDef>
-      <recipeUsers>
-        <li>TableMachining</li>
-      </recipeUsers>
+	<researchPrerequisite>ToxGas</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+		<recipeUsers>
+				<li>FabricationBench</li>
+		</recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
       <workSkill>Crafting</workSkill>
       <effectWorking>Smith</effectWorking>
       <soundWorking>Recipe_Smith</soundWorking>
-      <skillRequirements>
-        <Crafting>4</Crafting>
-      </skillRequirements>
     </recipeMaker>
     <costList>
-      <VFES_Weapon_GrenadeDynamite>1</VFES_Weapon_GrenadeDynamite>
+      <Weapon_GrenadeTox>1</Weapon_GrenadeTox>
     </costList>
     <graphicData>
-      <texPath>Things/Item/BeltGrenades/DynamiteBelt</texPath>
+      <texPath>Things/Item/BeltGrenades/GasGrenadeBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -211,7 +212,7 @@
     </thingCategories>
     <generateAllowChance>0.15</generateAllowChance>
     <apparel>
-	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/DynamiteBelt/DynamiteBelt</wornGraphicPath>
+	<wornGraphicPath>Things/Pawn/Humanlike/Apparel/GasGrenadeBelt/GasGrenadeBelt</wornGraphicPath>
       <wornGraphicData>
         <renderUtilityAsPack>true</renderUtilityAsPack>
         <north>
@@ -253,7 +254,7 @@
         <li>Belt</li>
       </layers>
       <tags>
-        <li>GrenadeDestructiveBelt</li>
+        <li>GrenadeNonDestructiveBelt</li>
       </tags>
     </apparel>
   </ThingDef>

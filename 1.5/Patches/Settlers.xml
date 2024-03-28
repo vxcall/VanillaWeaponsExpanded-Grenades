@@ -147,7 +147,7 @@
     <description>Makeshift explosive sticks of chemfuel strapped to a belt. They can be thrown a short distance, where they will explode after a random amount of time. Can be reloaded using dynamite.</description>
     <techLevel>Industrial</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
+      <li Class="CompProperties_ApparelReloadable">
         <maxCharges>6</maxCharges>
         <ammoDef>VFES_Weapon_GrenadeDynamite</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>

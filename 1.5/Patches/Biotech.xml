@@ -59,7 +59,7 @@
 			<Crafting>7</Crafting>
 		</skillRequirements>
 		<recipeUsers>
-				<li>FabricationBench</li>
+				<li>TableMachining</li>
 		</recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -185,7 +185,7 @@
 			<Crafting>7</Crafting>
 		</skillRequirements>
 		<recipeUsers>
-				<li>FabricationBench</li>
+				<li>TableMachining</li>
 		</recipeUsers>
       <useIngredientsForColor>false</useIngredientsForColor>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

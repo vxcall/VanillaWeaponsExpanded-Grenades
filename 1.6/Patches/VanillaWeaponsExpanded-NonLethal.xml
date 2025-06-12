@@ -28,7 +28,7 @@
                 <EquipDelay>2</EquipDelay>
               </statBases>
               <comps>
-                <li Class="CompProperties_Reloadable">
+                <li Class="CompProperties_ApparelReloadable">
                   <maxCharges>5</maxCharges>
                   <ammoDef>VWE_TearGasGrenade</ammoDef>
 					<ammoCountToRefill>1</ammoCountToRefill>

@@ -6,8 +6,8 @@
     <description>Old-school fragmentation grenades strapped to a belt. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby. Can be reloaded using frag grenades.</description>
     <techLevel>Industrial</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
         <ammoDef>Weapon_GrenadeFrag</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>
@@ -113,6 +113,7 @@
       </layers>
       <tags>
         <li>GrenadeDestructiveBelt</li>
+		<li>GrenadeFragBelt</li>
       </tags>
     </apparel>
   </ThingDef>
@@ -124,8 +125,8 @@
     <description>Glass bottles filled with flammable liquid, with a burning cloth in the neck, strapped to a belt. A favorite weapon of hooligans and desperate warriors from rim to rim. They can be thrown a short distance, where they'll explode, damaging anything and anyone nearby, setting chemfuel on fire. Can be reloaded using molotovs.</description>
     <techLevel>Industrial</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>8</maxCharges>
         <ammoDef>Weapon_GrenadeMolotov</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>
@@ -241,8 +242,8 @@
     <description>Electromagnetic pulse grenades damaging to electronic equipment strapped to a belt. They can be thrown a short distance, where they'll explode, disabling any electronics for a brief duration.</description>
     <techLevel>Industrial</techLevel>
     <comps>
-      <li Class="CompProperties_Reloadable">
-        <maxCharges>5</maxCharges>
+      <li Class="CompProperties_ApparelReloadable">
+        <maxCharges>10</maxCharges>
         <ammoDef>Weapon_GrenadeEMP</ammoDef>
         <ammoCountToRefill>1</ammoCountToRefill>
         <baseReloadTicks>60</baseReloadTicks>

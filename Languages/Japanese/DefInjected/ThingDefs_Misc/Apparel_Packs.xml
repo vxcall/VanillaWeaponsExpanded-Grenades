@@ -1,0 +1,18 @@
+<LanguageData>
+
+  <VWE_Apparel_GrenadeFragBelt.label>手榴弾ベルト</VWE_Apparel_GrenadeFragBelt.label>
+  <VWE_Apparel_GrenadeFragBelt.description>昔ながらの手榴弾が装填されたベルト。短い距離に投げることができ、爆発して周囲の人や物体にダメージを与えます。手榴弾を使いベルトに補充することができます。</VWE_Apparel_GrenadeFragBelt.description>
+  <VWE_Apparel_GrenadeFragBelt.chargeNoun>手榴弾</VWE_Apparel_GrenadeFragBelt.chargeNoun>
+  <VWE_Apparel_GrenadeFragBelt.throw frag grenade>手榴弾を投げる</VWE_Apparel_GrenadeFragBelt.throw frag grenade>
+
+  <VWE_Apparel_GrenadeMolotovBelt.label>火炎瓶ベルト</VWE_Apparel_GrenadeMolotovBelt.label>
+  <VWE_Apparel_GrenadeMolotovBelt.description>可燃性の液体と燃える布が入ったガラス瓶が装填されたベルト。リムワールド中の不良や必死な戦士たちに人気の武器です。短い距離に投げることができ、爆発して周囲の人や物体にダメージを与え、また落ちているバイオ液化燃料に火をつけます。火炎瓶を使いベルトに補充することができます。</VWE_Apparel_GrenadeMolotovBelt.description>
+  <VWE_Apparel_GrenadeMolotovBelt.chargeNoun>火炎瓶</VWE_Apparel_GrenadeMolotovBelt.chargeNoun>
+  <VWE_Apparel_GrenadeMolotovBelt.throw molotov>火炎瓶を投げる</VWE_Apparel_GrenadeMolotovBelt.throw molotov>
+
+  <VWE_Apparel_GrenadeEMPBelt.label>EMP手榴弾ベルト</VWE_Apparel_GrenadeEMPBelt.label>
+  <VWE_Apparel_GrenadeEMPBelt.description>電子機器にダメージを与える電磁パルス手榴弾が装填されたベルト。短い距離に投げることができ、爆発して一時的に電子機器を無力化します。手榴弾(EMP)を使いベルトに補充することができます。</VWE_Apparel_GrenadeEMPBelt.description>
+  <VWE_Apparel_GrenadeEMPBelt.chargeNoun>EMP手榴弾</VWE_Apparel_GrenadeEMPBelt.chargeNoun>
+  <VWE_Apparel_GrenadeEMPBelt.throw EMP grenade>EMP手榴弾を投げる</VWE_Apparel_GrenadeEMPBelt.throw EMP grenade>
+
+</LanguageData>
